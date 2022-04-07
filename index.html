@@ -12,46 +12,48 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center">Money Master💰</h1>
+        <h1 class="text-center">Money Calculation💰</h1>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
                     <img class="img-fluid" src="money.jpg" alt="">
                 </div>
-                <div class="col-md-6">
+                <div id="count-section" class="col-md-6">
                     <h2 class="text-center">Income</h2>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">Income</span>
-                        <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+                        <input id="income-input" type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
                       </div>
                     <h2 class="text-center">Expenses</h2>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">Food</span>
-                        <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+                        <input id="food-input" type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
                       </div>
                       <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">Rent</span>
-                        <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+                        <input id="rent-input" type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
                       </div>
                       <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">Clothes</span>
-                        <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+                        <input id="clothes-input" type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
                       </div>
-                    <button class="btn btn-primary">Calculate</button>
+                    <button id="calculate-button" class="btn btn-primary">Calculate</button>
                     <br>
-                    <h2 class="text-center">Total Expenses:<span>00</span></h2>
-                    <h2 class="text-center">Banlance:<span>00</span></h2>
+                    <h2 class="text-center">Total Expenses:<span id="total-expenses">00</span></h2>
+                    <h2 class="text-center">Banlance:<span id="balance">00</span></h2>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">Save</span>
-                        <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
-                      </div>%<button class="btn btn-primary">Save</button> 
+                        <input id="save-input" type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+                      </div>%<button id="save-button" class="btn btn-primary">Save</button> 
                     <br>
-                    <h2 class="text-center">Saving Amount:<span>00</span> </h2>
-                    <h2 class="text-center">Remaining Amount:<span>00</span> </h2>
+                    <h2  class="text-center">Saving Amount:<span id="saving-amount">00</span> </h2>
+                    <h2 class="text-center">Remaining Amount:<span id="remaining-amount">00</span> </h2>
     
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
